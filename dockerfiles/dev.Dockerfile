@@ -15,3 +15,5 @@ COPY . .
 
 # Expose the application port
 EXPOSE 8000
+
+

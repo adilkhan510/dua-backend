@@ -8,7 +8,7 @@ router = APIRouter()
 
 @router.post("/")
 def create_dua(dua: DuaCreate, db: Session = Depends(get_db)):
-    db_dua = Dua(title=dua.title, content=dua.content, user_id=1)  # Replace with actual user logic
+    db_dua = Dua(title=dua.title, content=dua.content, user_id=1)  
     db.add(db_dua)
     db.commit()
     db.refresh(db_dua)

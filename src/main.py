@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],  
 )
 
-# Include routes
+
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
 app.include_router(dua.router, prefix="/duas", tags=["Duas"])
 
